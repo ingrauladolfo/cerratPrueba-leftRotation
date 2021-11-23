@@ -1,6 +1,6 @@
 const rotationLeft = (arr, rotations) => {
   const rotatedArray = arr.concat();
-  for (let i = 0; i < rotations; i++) {
+  for (let i = 0; i < rotations.length; i++) {
     const frontItem = rotatedArray.shift();
     rotatedArray.push(frontItem);
   }
