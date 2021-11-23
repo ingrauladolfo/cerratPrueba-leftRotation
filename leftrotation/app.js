@@ -1,4 +1,4 @@
-const roationLeft = (arr, rotations) => {
+const rotationLeft = (arr, rotations) => {
   const rotatedArray = arr.concat();
   for (let i = 0; i < rotations; i++) {
     const frontItem = rotatedArray.shift();
@@ -12,5 +12,5 @@ const sampleArray = [1, 2, 3, 4, 5];
 
 const expectedOutput = [5, 1, 2, 3, 4];
 
-console.log(`Array with roation: ${rotLeft(sampleArray, numRotation)}`);
+console.log(`Array with roation: ${rotationLeft(sampleArray, numRotation)}`);
 console.log(`Expected output: ${expectedOutput}`);
